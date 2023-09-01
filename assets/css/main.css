@@ -702,7 +702,7 @@ body {
 .intro--options > a {
   max-width: 250px;
   text-decoration: none;
-  color: #282828;
+  color: #c4c3c3b6;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
@@ -849,7 +849,7 @@ body {
   width: 150px;
   height: 150px;
   margin: 0 auto;
-  border-radius: 50%;
+  border-radius: 0%;
   overflow: hidden;
 }
 .work--lockup .slider--item-image img {
