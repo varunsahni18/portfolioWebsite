@@ -9,6 +9,7 @@
     <meta name="keywords" content="global, template, html, sass, jquery" />
     <meta name="author" content="Varun Sahni" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.png" />
   </head>
   <body>
     <!-- notification for small viewports and landscape oriented smartphones -->
@@ -34,7 +35,7 @@
                 <img src="assets/img/logo.png" alt="Varun Sahni" />
                 <p>Varun Sahni</p>
               </a>
-              <button class="header--cta cta">Hire Us</button>
+              <button class="header--cta cta">Contact Me</button>
               <div class="header--nav-toggle">
                 <span></span>
               </div>
@@ -45,7 +46,7 @@
                 <li><span>Works</span></li>
                 <li><span>About</span></li>
                 <li><span>Social</span></li>
-                <li><span>Contact us</span></li>
+                <li><span>Contact</span></li>
               </ul>
             </nav>
             <ul class="l-main-content main-content">
@@ -55,14 +56,16 @@
                     <h1>Varun Sahni<br /></h1>
                     <h2>
                       Final year, B.E. Computer Science<br />Birla Institute of
-                      technology & Science (BITS Pilani)<br /><a
+                      technology & Science (BITS Pilani)<br />
+                      <a
+                        style="color: white"
                         href="https://kxr-portfolio.vercel.app/"
                         >President - KXR Lab BITS Pilani</a
                       >
                     </h2>
                     <a href="assets/resume.pdf" class="download-button">
-                        Download Resume
-                      </a>
+                      Download Resume
+                    </a>
                     <img
                       src="assets/img/profile-photo2_bgremoved.png"
                       alt="Welcome"
@@ -192,9 +195,29 @@
                       </svg>
                     </div>
                   </div>
-                  <div style="display: flex; justify-content: center; align-items: center;">
-                    <button onclick="myFunction()" style="margin-top: 50px; padding: 10px 15px; width: 150px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Gallery View</button>
-                  </div>                  
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <button
+                      onclick="myFunction()"
+                      style="
+                        margin-top: 50px;
+                        padding: 10px 15px;
+                        width: 150px;
+                        background-color: #4caf50;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                      "
+                    >
+                      Gallery View
+                    </button>
+                  </div>
                 </div>
               </li>
               <li class="l-section section">
@@ -245,17 +268,24 @@
                   <div class="contact--lockup">
                     <div class="modal">
                       <div class="modal--information">
-                        <p>Pawia 5, 31-154 Kraków, Poland</p>
+                        <p>Delhi, India</p>
                         <a href="mailto:ouremail@gmail.com"
-                          >ouremail@gmail.com</a
+                          >apnamaildaaldena@gmail.com</a
                         >
-                        <a href="tel:+148126287560">+48 12 628 75 60</a>
+                        <a href="tel:+148126287560">+91 70420 90825</a>
                       </div>
                       <ul class="modal--options">
-                        <li><a href="#0">Bēhance</a></li>
-                        <li><a href="#0">dribbble</a></li>
                         <li>
-                          <a href="mailto:ouremail@gmail.com">Contact Us</a>
+                          <a
+                            href="https://in.linkedin.com/in/varun-sahni-profile"
+                            >LinkedIn</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/varunsahni18">GitHub</a>
+                        </li>
+                        <li>
+                          <a href="mailto:ouremail@gmail.com">Email</a>
                         </li>
                       </ul>
                     </div>
@@ -264,12 +294,15 @@
               </li>
               <li class="l-section section">
                 <div class="hire">
-                  <h2>You want us to do</h2>
+                  <h2>
+                    Interested to work together ? <br />
+                    Let's talk
+                  </h2>
                   <!-- checkout formspree.io for easy form setup -->
                   <form class="work-request">
-                    <div class="work-request--options">
-                      <span class="options-a">
-                        <input id="opt-1" type="checkbox" value="app design" />
+                    <!-- <div class="work-request--options"> -->
+                    <!-- <span class="options-a"> -->
+                    <!-- <input id="opt-1" type="checkbox" value="app design" />
                         <label for="opt-1">
                           <svg
                             version="1.1"
@@ -291,8 +324,8 @@
                             </g>
                           </svg>
                           App Design
-                        </label>
-                        <input
+                        </label> -->
+                    <!-- <input
                           id="opt-2"
                           type="checkbox"
                           value="graphic design"
@@ -393,8 +426,8 @@
                             </g>
                           </svg>
                           Webdesign
-                        </label>
-                        <input id="opt-6" type="checkbox" value="marketing" />
+                        </label> -->
+                    <!-- <input id="opt-6" type="checkbox" value="marketing" />
                         <label for="opt-6">
                           <svg
                             version="1.1"
@@ -416,9 +449,9 @@
                             </g>
                           </svg>
                           Marketing
-                        </label>
-                      </span>
-                    </div>
+                        </label> -->
+                    <!-- </span> -->
+                    <!-- </div> -->
                     <div class="work-request--information">
                       <div class="information-name">
                         <input id="name" type="text" spellcheck="false" />
@@ -429,7 +462,21 @@
                         <label for="email">Email</label>
                       </div>
                     </div>
-                    <input type="submit" value="Send Request" />
+                    <div
+                      class="work-request--information"
+                      style="width: 100% !important"
+                    >
+                      <div class="information-email">
+                        <input
+                          id="message"
+                          type="text"
+                          spellcheck="false"
+                          style="width: 223%"
+                        />
+                        <label for="message">Message</label>
+                      </div>
+                    </div>
+                    <input type="submit" value="Send" />
                   </form>
                 </div>
               </li>
@@ -442,11 +489,10 @@
         <li>Works</li>
         <li>About</li>
         <li>Contact</li>
-        <li>Hire us</li>
+        <li>Hire</li>
       </ul>
     </div>
-    <script src="demo_script_src.js">
-    </script>
+    <script src="demo_script_src.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
       window.jQuery ||
