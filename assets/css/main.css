@@ -290,7 +290,7 @@ body {
 .l-main-content {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 90%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -800,6 +800,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
+  
 }
 @media (max-width: 1180px) {
   .work {
@@ -1653,4 +1654,74 @@ body {
 
 .download-button:hover {
   background-color: #301d8a;
+}
+
+#myDIV2 {
+  display: none;
+}
+
+/* .mydiv_grid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.mydiv_card {
+  margin: 10px;
+  width: 15vw;
+  height: 30px;
+  background-color: #ac3434;
+} */
+
+/* Custom styles for the project grid */
+
+.gallery-view {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 projects in each row */
+  gap: 20px; /* Add space between projects */
+  margin-top: 20; /* Remove top margin */
+  padding: 20px; /* Add padding to the gallery */
+  overflow: auto; /* Add scroll if necessary */
+  
+}
+
+.mydiv_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mydiv_card {
+  flex: calc(33.33% - 20px); /* 3 cards in a row with a little spacing */
+  margin-bottom: 20px;
+  margin-right: 20px; /* Add margin-right for space between projects */
+  box-sizing: border-box;
+  background-color: transparent;
+  text-align: center;
+  /* border: 1px solid #ddd; */
+  /* padding: 20px; Remove or reduce this padding */
+}
+
+.mydiv_card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.mydiv_card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.mydiv_card h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.mydiv_card p {
+  font-size: 14px;
+  color: #666;
+}
+.project-container {
+  max-height: 500px; /* Set your desired max height */
+  overflow-y: auto; /* Enable vertical scrolling */
 }
