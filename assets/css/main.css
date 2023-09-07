@@ -230,7 +230,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  -webkit-tap-highlight-color: #fff498;
+  -webkit-tap-highlight-color: #889aff6e;
 }
 body {
   background-color: #0c0c0c;
@@ -1605,8 +1605,8 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -25%);
   transform: translate(-50%, -25%);
-  width: 110%;
-  height: 60px;
+  width: 102%;
+  height: 40px;
   opacity: 1;
   background-color: #889aff49;
 }
@@ -1675,15 +1675,69 @@ body {
 
 /* Custom styles for the project grid */
 
+/* Default styles for larger screens (3 projects per row) */
 .gallery-view {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 projects in each row */
-  gap: 20px; /* Add space between projects */
-  margin-top: 20; /* Remove top margin */
-  padding: 20px; /* Add padding to the gallery */
-  overflow: auto; /* Add scroll if necessary */
-  
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  overflow: auto;
 }
+
+.mydiv_card {
+  flex: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  background-color: transparent;
+  text-align: center;
+}
+
+.mydiv_card:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* Media query for smaller screens (2 projects per row) */
+/* Media query for smaller screens (2 projects per row) */
+@media (max-width: 768px) {
+  .gallery-view {
+    grid-template-columns: repeat(2, 1fr); /* 2 projects per row */
+    gap: 20px; /* Add space between projects */
+  }
+
+  .mydiv_card {
+    flex: calc(50% - 10px); /* 2 projects per row with spacing */
+    /* margin-right: 20px;  */
+    /* Add margin-right to create space between projects */ 
+
+  }
+  /* Media query for smaller screens (2 projects per row) */
+@media (max-width: 768px) {
+  .gallery-view {
+    grid-template-columns: repeat(2, 1fr); /* 2 projects per row */
+    gap: 20px; /* Add space between projects */
+  }
+
+  .mydiv_card {
+    flex: calc(50% - 10px); /* 2 projects per row with spacing */
+    margin-right: 20px; /* Add margin-right to create space between projects */
+    margin-bottom: 20px;
+  }
+
+  /* Remove margin-right for the last item in each row */
+  .mydiv_card:nth-child(3n) {
+    margin-right: 20px;
+  }
+}
+
+
+  /* Remove margin-right for the last item in each row */
+  .mydiv_card:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
 
 .mydiv_grid {
   display: flex;
@@ -1691,20 +1745,6 @@ body {
   justify-content: space-between;
 }
 
-.mydiv_card {
-  flex: calc(33.33% - 20px); /* 3 cards in a row with a little spacing */
-  margin-bottom: 20px;
-  margin-right: 20px; /* Add margin-right for space between projects */
-  box-sizing: border-box;
-  background-color: transparent;
-  text-align: center;
-  /* border: 1px solid #ddd; */
-  /* padding: 20px; Remove or reduce this padding */
-}
-
-.mydiv_card:nth-child(3n) {
-  margin-right: 0;
-}
 
 .mydiv_card img {
   max-width: 100%;
