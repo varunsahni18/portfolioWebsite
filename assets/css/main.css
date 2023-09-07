@@ -1725,3 +1725,90 @@ body {
   max-height: 500px; /* Set your desired max height */
   overflow-y: auto; /* Enable vertical scrolling */
 }
+
+.about {
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-page {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.column {
+  flex: 1;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .about-page {
+    flex-direction: column; /* Switch to a single-column layout */
+    align-items: center; /* Center-align the columns */
+  }
+  
+  .column {
+    flex: none; /* Disable flex to stack columns vertically */
+    width: 100%; /* Take up full width of the container */
+    margin-bottom: 20px; /* Add some spacing between columns */
+  }
+}
+
+.section-heading {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.experience {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  background-color: #007acc;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 5px; /* Aligns the top of the circle with the top of job title */
+}
+
+.info {
+  flex: 1;
+}
+
+.job-title {
+  font-size: 18px;
+  margin: 0;
+  text-align: left;
+}
+
+.company-name {
+  font-size: 16px;
+  margin: 0;
+  text-align: left;
+}
+
+.date {
+  font-size: 12px;
+  margin: 0;
+  text-align: left; /* Left-aligns the date */
+}
+
+.description {
+  font-size: 16px;
+  margin: 5px 0 0 0;
+  text-align: left;
+}
+
+.top-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
